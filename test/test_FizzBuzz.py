@@ -19,3 +19,7 @@ def test_check_input_10():
 
 def test_check_input_15():
     assert fizzbuzz(15) == "FizzBuzz"
+
+
+def test_check_input_1():
+    assert fizzbuzz(1) == "1"
