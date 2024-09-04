@@ -1,4 +1,4 @@
-from src.FizzBuzz import fizzbuzz
+from src.Fizzbuzz.FizzBuzz import fizzbuzz
 
 
 def test_check_input_3():
