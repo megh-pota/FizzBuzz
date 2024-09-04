@@ -7,3 +7,7 @@ def test_LeapYear():
 
 def test_LeapYear2():
     assert LeapYear(1901) == "nlp"
+
+
+def test_LeapYear3():
+    assert LeapYear(1800) == "lp"
