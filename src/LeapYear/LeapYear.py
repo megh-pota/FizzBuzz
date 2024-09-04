@@ -1,9 +1,7 @@
 def LeapYear(self):
-    if self % 4 == 0 and self % 100 == 0:
+    if self % 4 == 0 and self % 100 == 0 and self % 400 == 0:
         return "lp"
-    elif self % 4 == 0:
-        return "lp"
-    elif self % 100 == 0:
+    elif self % 4 == 0 and self % 100 == 0:
         return "lp"
     else:
         return "nlp"
