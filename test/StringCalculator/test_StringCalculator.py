@@ -19,3 +19,7 @@ def test_one_to_nine_input():
 
 def test_nagative_and_positive_input():
     assert Add("-1,0,1") == 0
+
+
+def test_accept_newline_as_delimiter():
+    assert Add("1\n2,3") == 6
