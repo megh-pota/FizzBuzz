@@ -1,3 +1,5 @@
+import pytest
+
 from src.StringCalculator.StringCalculator import Add
 
 
@@ -23,3 +25,17 @@ def test_nagative_and_positive_input():
 
 def test_accept_newline_as_delimiter():
     assert Add("1\n2,3") == 6
+
+
+def test_accept_custurm_sep():
+    assert Add("//;\n12") == 3
+
+
+def test_handle_neg_num():
+    with pytest.raises(Exception) as exe:
+        Add("1,-2,-3")
+    assert exe.value
+
+
+def test_accept_less_than_1000():
+    assert Add("1001,2") == 2
